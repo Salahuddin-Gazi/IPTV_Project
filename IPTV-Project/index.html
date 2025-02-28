@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPTV Channel Player</title>
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Video Player Container -->
+    <div class="video-container">
+      <video id="video-player" class="video-js" controls preload="auto" width="100%" height="100%">
+        <source id="video-source" src="" type="application/x-mpegURL">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <!-- Channel List -->
+  <div class="channel-list">
+    <div class="file-input-container default-border">
+      <label for="m3u-file-input" class="file-input-label">Choose .m3u Files</label>
+      <input type="file" id="m3u-file-input" class="file-input" accept=".m3u, .m3u8" multiple>
+      <div class="selected-files" id="selected-files">No files chosen</div>
+      <button id="load-files" class="load-files-button">Load Files</button>
+    </div>
+
+    <!-- Category Select Dropdown -->
+    <div class="category-select-container default-border">
+      <h5>Select category/insert url to view channel lists</h5>
+      <select id="category-select" class="category-select">
+        <option value="" disabled selected>Select a category</option>
+      </select>
+      <div class="url-box-container">
+        <input type="text" id="url-box" class="url-box" placeholder="m3u or m3u8 link...">
+        <button class="url-box-button">Get</button>
+      </div>
+    </div>
+
+    <div class="search-container default-border">
+      <h3>Search Channels</h3>
+      <input type="text" id="search-box" class="search-box" placeholder="Search channels...">
+    </div>
+
+    <div class="channel-stats default-border">
+      <div>Total Channels: <span id="total-channels">0</span></div>
+      <div>Available Channels: <span id="available-channels">0</span></div>
+    </div>
+
+    <div class="loader" id="loader">
+      <span>Loading...</span>
+      <span class="loader-progress" id="loader-progress">0%</span>
+    </div>
+
+    <div class="channel-list-container">
+      <h3>Available Channels</h3>
+      <div id="channel-list"></div>
+    </div>
+  </div>
+
+  <!-- Video.js Script -->
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+  <script src="categories.js"></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>

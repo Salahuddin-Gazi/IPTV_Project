@@ -1,0 +1,35 @@
+// categories.js
+const categories = [
+  { name: "Animation", url: "https://iptv-org.github.io/iptv/categories/animation.m3u" },
+  { name: "Auto", url: "https://iptv-org.github.io/iptv/categories/auto.m3u" },
+  { name: "Business", url: "https://iptv-org.github.io/iptv/categories/business.m3u" },
+  { name: "Classic", url: "https://iptv-org.github.io/iptv/categories/classic.m3u" },
+  { name: "Comedy", url: "https://iptv-org.github.io/iptv/categories/comedy.m3u" },
+  { name: "Cooking", url: "https://iptv-org.github.io/iptv/categories/cooking.m3u" },
+  { name: "Culture", url: "https://iptv-org.github.io/iptv/categories/culture.m3u" },
+  { name: "Documentary", url: "https://iptv-org.github.io/iptv/categories/documentary.m3u" },
+  { name: "Education", url: "https://iptv-org.github.io/iptv/categories/education.m3u" },
+  { name: "Entertainment", url: "https://iptv-org.github.io/iptv/categories/entertainment.m3u" },
+  { name: "Family", url: "https://iptv-org.github.io/iptv/categories/family.m3u" },
+  { name: "General", url: "https://iptv-org.github.io/iptv/categories/general.m3u" },
+  { name: "Kids", url: "https://iptv-org.github.io/iptv/categories/kids.m3u" },
+  { name: "Legislative", url: "https://iptv-org.github.io/iptv/categories/legislative.m3u" },
+  { name: "Lifestyle", url: "https://iptv-org.github.io/iptv/categories/lifestyle.m3u" },
+  { name: "Movies", url: "https://iptv-org.github.io/iptv/categories/movies.m3u" },
+  { name: "Music", url: "https://iptv-org.github.io/iptv/categories/music.m3u" },
+  { name: "News", url: "https://iptv-org.github.io/iptv/categories/news.m3u" },
+  { name: "Outdoor", url: "https://iptv-org.github.io/iptv/categories/outdoor.m3u" },
+  { name: "Relax", url: "https://iptv-org.github.io/iptv/categories/relax.m3u" },
+  { name: "Religious", url: "https://iptv-org.github.io/iptv/categories/religious.m3u" },
+  { name: "Science", url: "https://iptv-org.github.io/iptv/categories/science.m3u" },
+  { name: "Series", url: "https://iptv-org.github.io/iptv/categories/series.m3u" },
+  { name: "Shop", url: "https://iptv-org.github.io/iptv/categories/shop.m3u" },
+  { name: "Sports", url: "https://iptv-org.github.io/iptv/categories/sports.m3u" },
+  { name: "Travel", url: "https://iptv-org.github.io/iptv/categories/travel.m3u" },
+  { name: "Weather", url: "https://iptv-org.github.io/iptv/categories/weather.m3u" },
+  { name: "Undefined", url: "https://iptv-org.github.io/iptv/categories/undefined.m3u" },
+  {
+    "name": "UserChoice",
+    "url": "http://.net/chs.m3u"
+  }
+];
